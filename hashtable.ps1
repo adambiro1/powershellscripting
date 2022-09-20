@@ -26,3 +26,9 @@ PS> $user['firstname','lastname']
 <#
 $user[$user.keys]
 #>
+#ordered hashtable just add [ordered]
+$usero = [ordered]@{ FirstName = 'John'; LastName = 'Smith';
+PhoneNumber = '555-1212'}
+
+#creating empty hashtable
+$newHastable = @{}
