@@ -1,0 +1,1 @@
+Get-Date -Hour 0 -Minute 0 -Second 0

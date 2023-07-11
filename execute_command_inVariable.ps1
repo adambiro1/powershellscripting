@@ -1,0 +1,2 @@
+$command = 'Get-ChildItem'
+& $command

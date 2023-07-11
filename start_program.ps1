@@ -1,0 +1,1 @@
+start-process -filepath "C:\users\username\appdata\roaming\microsoft\windows\startmenu\Programs\programname"
