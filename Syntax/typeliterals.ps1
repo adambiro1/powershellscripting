@@ -1,4 +1,4 @@
-using a type literal
+#using a type literal
 $i = [int] '123'
 #changing the literal and also creating an array of integers
 $i = [int[]] '123'
