@@ -28,3 +28,21 @@ Get-ADUser -Identity "username" -Properties LastLogon
 #for a normal time format:
 
 Get-ADUser -Filter {Name -eq "username"} -Properties * | Select-Object Name, @{N='LastLogon'; E={[DateTime]::FromFileTime($_.LastLogon)}}
+
+# get properties from user from AD
+
+$A_user = Get-ADUser "adambiro" -Property *
+
+$A_user.lastLogon
+
+ 
+
+#get computers from AD
+
+Get-ADComputer -Filter * -Properties * | Select-Object -First 1
+
+ 
+
+#get user from AD
+
+Get-ADUser -Filter * -Properties * | Select-Object -First 1
