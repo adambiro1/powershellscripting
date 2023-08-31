@@ -46,3 +46,7 @@ Get-ADComputer -Filter * -Properties * | Select-Object -First 1
 #get user from AD
 
 Get-ADUser -Filter * -Properties * | Select-Object -First 1
+
+#Identify devices domain:
+
+[System.Net.Dns]::GetHostEntry([String]$ENV:ComputerName).HostName
